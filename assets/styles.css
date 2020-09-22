@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Monument Extended';
+    src: url("../fonts/MonumentExtended-Ultrabold.woff2") format('woff2'),
+        url("../fonts/MonumentExtended-Ultrabold.woff") format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monument Extended';
+    src: url("../fonts/MonumentExtended-Regular.woff2") format('woff2'),
+        url("../fonts/MonumentExtended-Regular.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+	font-family: 'PTRootUIWebRegular';
+	src: url("../fonts/PT%20Root%20UI_Regular.eot");
+	src:
+	     url("../fonts/PT%20Root%20UI_Regular.eot?#iefix") format('embedded-opentype'),
+	     url("../fonts/PT%20Root%20UI_Regular.woff2") format('woff2'),
+	     url("../fonts/PT%20Root%20UI_Regular.woff") format('woff'),
+	     url("../fonts/PT%20Root%20UI_Regular.ttf") format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+body {
+    font-family: "MonumentExtended-Regular";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    background:#FF9C00;
+    color: #fff;
+    max-width: 1980px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+
+}
+.col {
+    padding: 0 20px;
+}
+.col-1 {
+    width: calc(100% / 12);
+}
+.col-2 {
+    width: calc(100% / 12 * 2);
+}
+.col-3 {
+    width: calc(100% / 12 * 3);
+}
+.col-4 {
+    width: calc(100% / 12 * 4);
+}
+.col-5 {
+    width: calc(100% / 12 * 5);
+}
+.col-6 {
+    width: calc(100% / 12 * 6);
+}
+.col-7 {
+    width: calc(100% / 12 * 7);
+}
+.col-8 {
+    width: calc(100% / 12 * 8);
+}
+.col-9 {
+    width: calc(100% / 12 * 9);
+}
+.col-10 {
+    width: calc(100% / 12 * 10);
+}
+.col-11 {
+    width: calc(100% / 12 * 11);
+}
+.col-12 {
+    width: 100%;
+}
+.row + .row {
+    margin-top: 10px;
+}
+.logo {
+    font-size: 2rem;
+
+}
+.change-colors-on-hover {
+    transition: color 0.4s ease, color 0.4s ease, cubic-bezier(0.22, 1, 0.36, 1);
+}
+.change-colors-on-hover:hover {
+    color: white;
+}
+.grow-on-hover {
+    transition: transform 0.3s ease-in-out 0.1s;
+    transform-origin: center;
+}
+.grow-on-hover:hover {
+    transform: scale(2);
+
+
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1rem;
+    color: #000;
+    width: 532px;
+
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.h1 {
+    font-size: 3rem;
+}
+p {
+    font-size: 2rem;
+}
+
