@@ -1,46 +1,52 @@
 @font-face {
-    font-family: 'Monument Extended';
-    src: url("../fonts/MonumentExtended-Ultrabold.woff2") format('woff2'),
-        url("../fonts/MonumentExtended-Ultrabold.woff") format('woff');
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Monument Extended';
-    src: url("../fonts/MonumentExtended-Regular.woff2") format('woff2'),
-        url("../fonts/MonumentExtended-Regular.woff") format('woff');
-    font-weight: normal;
+    font-family: 'Druk Wide Cy';
+    src: url("fonts/DrukWideCy-Medium.woff2") format('woff2'),
+        url("fonts/DrukWideCy-Medium.woff") format('woff');
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
 	font-family: 'PTRootUIWebRegular';
-	src: url("../fonts/PT%20Root%20UI_Regular.eot");
+	src: url("fonts/PT%20Root%20UI_Regular.eot");
 	src:
-	     url("../fonts/PT%20Root%20UI_Regular.eot?#iefix") format('embedded-opentype'),
-	     url("../fonts/PT%20Root%20UI_Regular.woff2") format('woff2'),
-	     url("../fonts/PT%20Root%20UI_Regular.woff") format('woff'),
-	     url("../fonts/PT%20Root%20UI_Regular.ttf") format('truetype');
+	     url("fonts/PT%20Root%20UI_Regular.eot?#iefix") format('embedded-opentype'),
+	     url("fonts/PT%20Root%20UI_Regular.woff2") format('woff2'),
+	     url("fonts/PT%20Root%20UI_Regular.woff") format('woff'),
+	     url("fonts/PT%20Root%20UI_Regular.ttf") format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
+html {
+    font-size: calc(10 / 1440 * 100vw);
+}
+@media (max-width: 600px;) {
+    html {
+        font-size: 6px;
+    }
+}
+@media (min-width: 1600px) {
+    html {
+        font-size: calc(10 / 1440 * 1600px);
+    }
+}
 body {
-    font-family: "MonumentExtended-Regular";
+    font-family: "Druk Wide Cy";
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     background:#FF9C00;
     color: #fff;
-    max-width: 1980px;
+    max-width: 120rem;
     box-sizing: border-box;
     margin: 0 auto;
 }
+
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -20px;
+    align-items: center;
+    justify-content: space-between;
 
 }
 .col {
@@ -90,7 +96,7 @@ body {
 
 }
 .change-colors-on-hover {
-    transition: color 0.4s ease, color 0.4s ease, cubic-bezier(0.22, 1, 0.36, 1);
+    transition: color 0.4s ease;
 }
 .change-colors-on-hover:hover {
     color: white;
@@ -111,9 +117,15 @@ body {
     justify-content: flex-end;
     font-size: 1rem;
     color: #000;
-    width: 532px;
+    width: 30rem;
 
 }
+@media (max-width: 600px;) {
+    html {
+        width: 10rem;
+    }
+}
+
 .header {
     display: flex;
     justify-content: center;
@@ -121,9 +133,9 @@ body {
 
 }
 .h1 {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 p {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
